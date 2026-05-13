@@ -92,11 +92,12 @@ line-length = 120
 
 [tool.ruff.lint]
 select = [
-    "E4",  # Ruff Defaults
+    "E4",   # Ruff Defaults
     "E7",
     "E9",
-    "F",   # End Ruff Defaults,
-    "D"
+    "F",    # End Ruff Defaults,
+    "D",    # pydocstyle
+    "I",    # isort
 ]
 ignore = [
     "D100", # Missing docstring in public module
