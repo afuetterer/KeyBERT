@@ -1,11 +1,11 @@
 import pytest
+import sentence_transformers
+from sklearn.feature_extraction.text import CountVectorizer
+
 from keybert import KeyBERT
 from keybert.backend import SentenceTransformerBackend
-import sentence_transformers
 
-from sklearn.feature_extraction.text import CountVectorizer
 from .utils import get_test_data
-
 
 doc_one, doc_two = get_test_data()
 

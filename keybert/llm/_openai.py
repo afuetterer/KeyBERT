@@ -1,10 +1,11 @@
 import time
+from typing import Any, List, Mapping
+
 import openai
 from tqdm import tqdm
-from typing import Mapping, Any, List
-from keybert.llm._base import BaseLLM
-from keybert.llm._utils import retry_with_exponential_backoff, process_candidate_keywords
 
+from keybert.llm._base import BaseLLM
+from keybert.llm._utils import process_candidate_keywords, retry_with_exponential_backoff
 
 DEFAULT_PROMPT = """
 The following is a list of documents. Please extract the top keywords, separated by a comma, that describe the topic of the texts.

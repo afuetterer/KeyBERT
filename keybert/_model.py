@@ -4,20 +4,20 @@ import warnings
 
 warnings.filterwarnings("ignore", category=FutureWarning)
 
-import numpy as np
-from typing import List, Union, Tuple
+from typing import List, Tuple, Union
 
+import numpy as np
 from packaging import version
 from sklearn import __version__ as sklearn_version
-from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
 
-from keybert._mmr import mmr
-from keybert._maxsum import max_sum_distance
+from keybert import KeyLLM
 from keybert._highlight import highlight_document
+from keybert._maxsum import max_sum_distance
+from keybert._mmr import mmr
 from keybert.backend._utils import select_backend
 from keybert.llm._base import BaseLLM
-from keybert import KeyLLM
 
 
 class KeyBERT:

@@ -1,6 +1,7 @@
-import numpy as np
 from operator import itemgetter
 from typing import List, Tuple
+
+import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 
 

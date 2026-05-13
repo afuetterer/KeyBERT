@@ -1,5 +1,6 @@
-import numpy as np
 from typing import List, Union
+
+import numpy as np
 from sentence_transformers import SentenceTransformer
 
 from keybert.backend import BaseEmbedder

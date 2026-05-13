@@ -1,6 +1,8 @@
+from typing import List
+
 import numpy as np
 from tqdm import tqdm
-from typing import List
+
 from keybert.backend import BaseEmbedder
 
 

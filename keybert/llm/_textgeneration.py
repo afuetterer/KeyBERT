@@ -1,10 +1,11 @@
+from typing import Any, List, Mapping, Union
+
 from tqdm import tqdm
 from transformers import pipeline, set_seed
 from transformers.pipelines.base import Pipeline
-from typing import Mapping, List, Any, Union
+
 from keybert.llm._base import BaseLLM
 from keybert.llm._utils import process_candidate_keywords
-
 
 DEFAULT_PROMPT = """
 I have the following document:

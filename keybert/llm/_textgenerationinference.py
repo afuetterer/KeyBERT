@@ -1,10 +1,12 @@
-from tqdm import tqdm
-from pydantic import BaseModel
+import json
+from typing import Any, List, Mapping
+
 from huggingface_hub import InferenceClient
-from typing import Mapping, List, Any
+from pydantic import BaseModel
+from tqdm import tqdm
+
 from keybert.llm._base import BaseLLM
 from keybert.llm._utils import process_candidate_keywords
-import json
 
 DEFAULT_PROMPT = """
     I have the following document:

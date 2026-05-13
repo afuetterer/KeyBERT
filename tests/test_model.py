@@ -1,10 +1,10 @@
 import pytest
-from keybert import KeyBERT
 from sklearn.datasets import fetch_20newsgroups
 from sklearn.feature_extraction.text import CountVectorizer
 
-from .utils import get_test_data
+from keybert import KeyBERT
 
+from .utils import get_test_data
 
 doc_one, doc_two = get_test_data()
 docs = fetch_20newsgroups(subset="test", remove=("headers", "footers", "quotes"))["data"]

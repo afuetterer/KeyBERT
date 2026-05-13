@@ -1,10 +1,12 @@
-import numpy as np
-from tqdm import tqdm
 from typing import List
-from packaging import version
-from keybert.backend import BaseEmbedder
+
+import numpy as np
 from gensim import __version__ as gensim_version
 from gensim.models.keyedvectors import Word2VecKeyedVectors
+from packaging import version
+from tqdm import tqdm
+
+from keybert.backend import BaseEmbedder
 
 
 class GensimBackend(BaseEmbedder):

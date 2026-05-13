@@ -1,9 +1,10 @@
 import time
-from tqdm import tqdm
 from typing import List
+
+from tqdm import tqdm
+
 from keybert.llm._base import BaseLLM
 from keybert.llm._utils import process_candidate_keywords
-
 
 DEFAULT_PROMPT = """
 The following is a list of documents. Please extract the top keywords, separated by a comma, that describe the topic of the texts.

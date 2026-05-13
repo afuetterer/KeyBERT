@@ -1,5 +1,5 @@
-from keybert.backend._base import BaseEmbedder
 from keybert._utils import NotInstalled
+from keybert.backend._base import BaseEmbedder
 
 # Sentence Transformers
 try:

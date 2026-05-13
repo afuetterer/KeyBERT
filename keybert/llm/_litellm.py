@@ -1,10 +1,11 @@
 import time
-from tqdm import tqdm
+from typing import Any, List, Mapping
+
 from litellm import completion
-from typing import Mapping, Any, List
+from tqdm import tqdm
+
 from keybert.llm._base import BaseLLM
 from keybert.llm._utils import process_candidate_keywords
-
 
 DEFAULT_PROMPT = """
 I have the following document:

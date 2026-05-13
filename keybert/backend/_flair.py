@@ -1,8 +1,9 @@
+from typing import List, Union
+
 import numpy as np
-from tqdm import tqdm
-from typing import Union, List
 from flair.data import Sentence
-from flair.embeddings import DocumentEmbeddings, TokenEmbeddings, DocumentPoolEmbeddings
+from flair.embeddings import DocumentEmbeddings, DocumentPoolEmbeddings, TokenEmbeddings
+from tqdm import tqdm
 
 from keybert.backend import BaseEmbedder
 

@@ -1,5 +1,6 @@
-from sklearn.base import BaseEstimator
 from typing import List
+
+from sklearn.base import BaseEstimator
 
 
 class BaseLLM(BaseEstimator):

@@ -1,9 +1,9 @@
-import numpy as np
-
-from tqdm import tqdm
 from typing import List
-from torch.utils.data import Dataset
+
+import numpy as np
 from sklearn.preprocessing import normalize
+from torch.utils.data import Dataset
+from tqdm import tqdm
 from transformers.pipelines import Pipeline
 
 from keybert.backend import BaseEmbedder

@@ -1,5 +1,6 @@
-import numpy as np
 from typing import List, Union
+
+import numpy as np
 from model2vec import StaticModel
 from sklearn.feature_extraction.text import CountVectorizer
 
